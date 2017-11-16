@@ -1,0 +1,45 @@
+---
+title: "Most popular TV shows"
+author: "Team Name"
+date: "November 16, 2017"
+output: 
+  html_document: 
+    fig_height: 4
+    highlight: pygments
+    keep_md: yes
+    theme: sandstone
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Setup
+
+### Load packages
+
+```{r load-packages, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(rvest)
+library(robotstxt)
+```
+
+### Task
+
+
+#### Task 1:
+
+Scrape the list of most popular TV shows on IMDB: http://www.imdb.com/chart/tvmeter
+
+
+#### Task 2:
+
+Examine each of the *first three* (or however many you can get through) movie subpage to also obtain
+
+- How many episodes so far
+- Certificate
+- First five plot keywords
+- Genres
+- Runtime
+- Country
+- Language
